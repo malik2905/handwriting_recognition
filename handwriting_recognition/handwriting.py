@@ -7,11 +7,19 @@ class NeuralNetwork:
         self.model = self.get_model()
 
     def get_model(self):
-        model = tf.keras.models.load_model('handwriting.keras')
+        try:
+            model = tf.keras.models.load_model('handwriting.keras')
+        except OSError as e:
+            print(f'OSError: {e}')
+            exit()
         return model
 
     def get_number(self, number):
-        number = number.reshape((1, 28, 28))
+        try:
+            number = number.reshape((1, 28, 28))
+        except ValueError as e:
+            print(f'ValueError: {e}')
+            exit()
         prediction = self.model.predict(number)
         return np.argmax(prediction)
     
