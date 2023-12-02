@@ -73,5 +73,3 @@ This project is licensed under the MIT License
 
 - The neural network model used in this project is trained on the MNIST dataset.
 - Special thanks to the Pygame community for providing a simple and interactive way to create graphical applications in Python.
-
-Happy coding!
