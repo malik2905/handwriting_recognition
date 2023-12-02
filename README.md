@@ -32,7 +32,7 @@ pip install -r requirements.txt
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/handwriting-recognition.git
+git clone https://github.com/malik2905/handwriting-recognition.git
 cd handwriting-recognition
 ```
 
